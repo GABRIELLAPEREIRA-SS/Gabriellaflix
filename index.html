@@ -1,50 +1,165 @@
-<hmtl lang="pt-BR">
+<!DOCTYPE html>
+<html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AluraBooks</title>
+        <link rel=”stylesheet” href=”reset.css”>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <linf rel="stylesheet" href="https://unpk.com/swiper@8/swiper-bundle.min.css">
         <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-  rel="stylesheet"
-/>
-        <title>GABRIELLAFLIX</title>
     </head>
-    
-    <body>
-        <header>GABRIELLAFLIX</header>
-    
-    <section class="chamada">
-    <div class="chamada-texto">
-        <h1>UMA SEMANA EM LONDRES COMIGO!</h1> 
-        <p> Viajando sozinha, perrengues & sonhos realizados</p>
-    </div>
-    
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JhyHAg60wP4?si=JD8k46rcr5Zx0K65" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
 
-    </section>
-    
-    </body>
-          
-    </html>
-    <section class="categoria">
-        <h2>Outras opções...</h2>
-        <div class="categoria-videos">
-        <a href="https://www.youtube.com/watch?v=N-oqsaju7j4">
-            <img src="https://img.youtube.com/vi/N-oqsaju7j4/maxresdefault.jpg"/>
-        </a>
-        <a href="https://www.youtube.com/watch?v=-EBavkHWTGc">
-            <img src="https://img.youtube.com/vi/-EBavkHWTGc/maxresdefault.jpg"/>
-        </a>
-        <a href="https://www.youtube.com/watch?v=PgPjPOKPOWg">
-            <img src="https://img.youtube.com/vi/PgPjPOKPOWg/maxresdefault.jpg"/>
-        </a>
-        <a href="https://www.youtube.com/watch?v=VF-pCA5zQKo">
-           <img src="https://img.youtube.com/vi/VF-pCA5zQKo/maxresdefault.jpg"/>
-        </a>
-        <a href="https://www.youtube.com/watch?v=-CVUDuCUSJo">
-           <img src="https://img.youtube.com/vi/-CVUDuCUSJo/maxresdefault.jpg">
-        </a>
+    <body>
+      <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+              <span class="cabeçalho_menu-hamburguer container_imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu_titulo">Categorias</li>
+                <li class="lista-menu_item">
+                  <a href="#" class="lista-menu_link">Programação</a>
+                </li>
+                <li class="lista-menu_item">
+                  <a href="#" class="lista-menu_link">Front-end</a>
+                </li>
+                <li class="lista-menu_item">
+                  <a href="#" class="lista-menu_link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu_item">
+                  <a href="#" class="lista-menu_link">Business</a>
+                </li>
+                <li class="lista-menu_item">
+                    <a href="#" class="lista-menu_link">Design & UX</a>
+                  </li>
+                </ul>
+                
+         <img scr="img/logo.svg" alt="Logo da Alurabooks" class="container_imagem">
         </div>
-      </section>
+        <div class="container">
+         <a herf="#"><img scr="img/Favoritos.svg" alt="Meus favoritos" class="container_imagem"></a>
+         <a herf="#"><img scr="img/Compras.svg" alt="Carrinho de compras" class="container_imagem"></a>
+         <a herf="#"><img scr="img/Usuário.svg" alt="Meu perfil" class="container_imagem"></a>
+        </div>
+      </header>
+
+      <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!<p>
+        <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <section class="carrossel"> I
+      <h2 class="carrossel titulo">Novos lançamentos</h2>
+      <!-- Slider main container -->
+       <!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+
+<div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/Apachekafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em design design da alura books"></div>
+    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javascript assertivo da alura books"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></di>
+</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+
+  <div class="card">
+    <!-- 1ª linha -->
+      <div class="card__descrição">
+        <!-- 1ª linha -->
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2> 
+            <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+          </div>
+          <!-- 2ª coluna -->
+          <img src="img/Angular.svg" class="descrição__imagem">
+      </div>
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1ª coluna -->
+        <ul class="botões">
+            <li class="botões_item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões_item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"</li>
+        </ul>
+        <!-- 2ª coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+  </div>
+
+</section>
+
+</section>
+<section class="tópicos">
+  <h2> class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+   <ul class="tópicos__lista">
+    <li class="tópicos__item">
+    <a href="#" class="tópicos__link">Android</a>
+</li>
+  <li class="tópicos__item">
+  <a href="#" class="tópicos__link">Marketing Digital</a>
+</li>
+  <li class="tópicos__item">
+  <a href="#" class="tópicos__link">Agile</a>
+</li>
+<li class="tópicos__item">
+  <a href="#" class="tópicos__link">Startups</a>
+</li>
+<li class="tópicos__item">
+  <a href="#" class="tópicos__link">HTML e CSS</a>
+</li>
+<li class="tópicos__item">
+  <a href="#" class="tópicos__link">OO</a>
+</li>
+<li class="tópicos__item">
+  <a href="#" class="tópicos__link">Java</a>
+</li>
+</ul>
+</section>
+
+<section class="contato">
+  <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+  <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+  <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+</section>
+
+<hr />
+
+<footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+</footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+       const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+           el: '.swiper-pagination',
+           type: 'bullets',
+        }
+    });
+      </script>
+     
+    </body>
+</html>
